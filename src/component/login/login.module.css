@@ -1,0 +1,13 @@
+@value makerWhite from '../../common/colors.css';
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+}
+
+.login {
+  height: 10rem;
+  background-color: makerWhite;
+}

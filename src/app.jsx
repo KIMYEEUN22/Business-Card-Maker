@@ -1,13 +1,16 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import "./app.module.css";
+import styles from "./app.module.css";
 import Login from "./component/login/login";
 
-function App() {
+function App({ authService }) {
   return (
-    <BrowserRouter>
-      <Login />
-    </BrowserRouter>
+    <div className={styles.app}>
+      <BrowserRouter>
+        <Login authService={authService} />
+      </BrowserRouter>
+    </div>
   );
 }
+
 export default App;

@@ -1,0 +1,28 @@
+@value mediaQuery from '../../common/size.css';
+
+.maker {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  height: 5rem;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  background-color: white;
+}
+
+@media screen and (max-width: mediaQuery) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  height: 4rem;
+}

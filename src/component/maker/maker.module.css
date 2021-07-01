@@ -7,10 +7,6 @@
   height: 100%;
 }
 
-.header {
-  height: 5rem;
-}
-
 .container {
   flex: 1;
   display: flex;
@@ -21,8 +17,4 @@
   .container {
     flex-direction: column;
   }
-}
-
-.footer {
-  height: 4rem;
 }

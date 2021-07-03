@@ -1,8 +1,9 @@
-@value makerWhite, makerGreen, makerLightPink from  '../../common/colors.css';
+@value makerGreen,makerLightGrey, makerLightPink from  '../../common/colors.css';
 
 .editor {
-  background-color: makerWhite;
   flex-basis: 50%;
+  border-right: 1px solid makerLightGrey;
+  padding: 0.5em 2em;
 }
 
 .title {
@@ -10,49 +11,4 @@
   text-align: center;
   margin-bottom: 1em;
   color: makerGreen;
-}
-
-.card {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  margin: auto;
-  padding: 0.5em 0;
-}
-
-.name {
-  width: 33.3%;
-}
-
-.corp {
-  width: 33.3%;
-}
-
-.thim {
-  width: 33.3%;
-}
-
-.job {
-  width: 50%;
-}
-
-.email {
-  width: 50%;
-}
-
-.discription {
-  width: 100%;
-}
-
-.nameBtn {
-  width: 50%;
-  background-color: makerLightPink;
-  border: makerGreen solid 0.1em;
-}
-
-.deleteBtn {
-  width: 50%;
-  background-color: makerGreen;
-  color: makerWhite;
-  border: makerGreen solid 0.1em;
 }

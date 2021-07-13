@@ -27,7 +27,7 @@ function getStyles(theme) {
       return styles.dark;
     case "light":
       return styles.light;
-    case "colorful":
+    case "color":
       return styles.colorful;
     default:
       throw new Error(`unkown theme: ${theme}`);

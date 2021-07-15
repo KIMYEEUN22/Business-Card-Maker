@@ -15,13 +15,15 @@ const Maker = ({ authService, FileInput, cardRepository }) => {
   const onLogout = () => {
     authService.logout();
   };
+
   useEffect(() => {
     if (!userId) return;
     const stopSync = cardRepository.syncCard(userId, (cards) => {
       setCards(cards);
     });
     return () => stopSync();
-  }, [userId]);
+  }, [userId, cardRepository]);
+
   useEffect(() => {
     authService.onAuthChange((user) => {
       if (user) {
@@ -30,7 +32,7 @@ const Maker = ({ authService, FileInput, cardRepository }) => {
         history.push("/");
       }
     });
-  });
+  }, [userId, history, authService]);
 
   const createOrUpdateCard = (card) => {
     setCards((cards) => {
